@@ -1,36 +1,16 @@
-# Stock Price Trend Analysis using Random Forest
+# Stock Price Trend Forecaster
 
-#Objective : 
-The objective of this project is to analyze historical stock price data and
-predict short-term price trends using a machine learning approach.
+## Project Overview
+An end-to-end web application that predicts future stock price trends using Machine Learning. The app fetches real-time data from Yahoo Finance, processes it using Pandas, and utilizes a Random Forest Regressor to forecast stock movements.
 
-#Data Source : 
-Historical stock price data is fetched programmatically from Yahoo Finance
-using the yfinance Python library.
+## Key Features
+- Real-time Data: Live integration with YFinance API.
+- Machine Learning: Random Forest algorithm for price prediction.
+- Interactive UI: Built with Streamlit for easy user interaction.
+- Technical Analysis: Includes Moving Averages (MA5, MA10) as key indicators.
 
-#Methodology : S
-- Collected historical stock data from 01-01-2019 to 01-01-2026
-- Performed data cleaning and preprocessing
-- Created lag features and moving averages
-- Trained a Random Forest regression model
-- Evaluated model performance using RMSE
-
-#Tools & Technologies :
-- Python
-- Pandas, NumPy
-- Scikit-learn
-- Matplotlib
-- yfinance
-- Jupyter Notebook
-
-#Results :
-The model was able to capture general price trends, though exact price
-prediction remains challenging due to market volatility.
-
-#Limitations : 
-Stock prices are influenced by external factors such as news and market
-sentiment, which are not included in this model.
-
-#Conclusion : 
-This project demonstrates an end-to-end machine learning pipeline for
-time-series stock data analysis and trend prediction.
+## How to Run Locally
+1. Clone the repository.
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
